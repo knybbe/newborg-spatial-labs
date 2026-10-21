@@ -20,4 +20,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-Additional simple UI icons (launch, download, layers, cloud, camera) in this folder are provided under the same MIT terms for Nyberg Spatial Lab.
+Additional simple UI icons (launch, download, layers, cloud, camera) in this folder are provided under the same MIT terms for Newborg Spatial Labs.
