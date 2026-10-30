@@ -8,7 +8,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Newborg Spatial Labs">
 <meta property="og:title" content="Newborg Spatial Labs">
-<meta property="og:description" content="Gaussian splat viewer, Potree 2 point clouds, and real-time photogrammetry.">
+<meta property="og:description" content="Gaussian splat viewer, Potree 2 point clouds, real-time photogrammetry, and Photo to Splat.">
 <meta property="og:url" content="https://knybbe.github.io/newborg-spatial-labs/">
 <meta property="og:image" content="https://knybbe.github.io/newborg-spatial-labs/images/splat.png">
 <link rel="icon" href="icons/layers.svg" type="image/svg+xml">
@@ -31,7 +31,7 @@ main{flex:1;max-width:1100px;width:100%;margin:0 auto;padding:16px 16px calc(24p
 .intro{margin-bottom:16px}
 .intro h2{margin:0 0 6px;font-size:24px;font-weight:600;letter-spacing:-.02em}
 .intro p{margin:0;max-width:70ch;color:var(--text-low);font-size:13px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
 .card{display:flex;flex-direction:column;background:var(--surface);border-radius:16px;box-shadow:var(--shadow);overflow:hidden;border:1px solid transparent;min-width:0}
 .card:hover{border-color:var(--accent)}
 .card .shot{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#171c1e;max-height:180px}
@@ -72,7 +72,7 @@ a{color:var(--accent)}
 <main>
  <section class="intro">
   <h2>Capture, stream and explore reality</h2>
-  <p>Three early previews from Newborg Spatial Labs: Gaussian splat viewing, high-performance Potree&nbsp;2 point clouds, and real-time photogrammetry in the phone browser. All built with permissively licensed open source.</p>
+  <p>Early previews from Newborg Spatial Labs: Gaussian splat viewing, Potree&nbsp;2 point clouds, real-time photogrammetry, and one-photo-to-splat generation. All built with permissively licensed open source.</p>
  </section>
 
  <section class="grid" aria-label="Apps">
@@ -126,6 +126,24 @@ a{color:var(--accent)}
     </div>
    </div>
   </article>
+
+  <article class="card">
+   <img class="shot" src="images/photo-to-splat.png" width="1280" height="800" alt="Photo to Splat turning a single object photo into a 3D Gaussian splat" loading="lazy">
+   <div class="body">
+    <div class="topline"><h3>Photo to Splat</h3><span class="badge">Preview</span></div>
+    <p>One photo of an object becomes a 3D Gaussian splat (.ply). Runs on knyai&rsquo;s GPU over Tailscale, with the Speridlabs Idol Hugging&nbsp;Face Space as fallback. Phone, tablet and laptop.</p>
+    <div class="meta">
+     <span class="chip"><span class="ico" style="--i:url(icons/camera.svg);width:14px;height:14px"></span>Idol</span>
+     <span class="chip">3DGS</span>
+     <span class="chip">Phone browser</span>
+    </div>
+    <div class="actions">
+     <a class="btn" href="https://knybbe.github.io/photo-to-splat/"><span class="ico" style="--i:url(icons/launch.svg)"></span>Open app</a>
+     <a class="btn secondary" href="https://github.com/knybbe/photo-to-splat"><span class="ico" style="--i:url(icons/folder-open.svg)"></span>Source</a>
+    </div>
+   </div>
+  </article>
+
  </section>
 
  <footer>
