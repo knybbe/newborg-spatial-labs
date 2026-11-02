@@ -59,6 +59,27 @@ a{color:var(--accent)}
  .btn{flex:1;min-width:calc(50% - 4px)}
  header .label{display:none}
 }
+/* Phones only, including Galaxy S26 Ultra (about 360–412px). Tablet at 768px still uses the 960px cards.
+   Action icons are hidden so both labels stay on one line inside a 44px target. */
+@media (max-width:480px){
+ .grid{grid-template-columns:1fr 1fr;gap:8px}
+ main{padding:12px max(8px,env(safe-area-inset-right)) calc(16px + env(safe-area-inset-bottom)) max(8px,env(safe-area-inset-left))}
+ .intro{margin-bottom:10px}
+ .intro h2{font-size:20px;line-height:1.2}
+ header .ghost{min-width:44px;min-height:44px;padding:0;justify-content:center}
+ .card{border-radius:12px}
+ .card .shot{width:100%;height:72px;min-height:72px;max-height:72px;aspect-ratio:auto;object-fit:cover;flex:0 0 auto}
+ .card .body{gap:6px;padding:8px 6px 8px}
+ .card .topline{gap:4px}
+ .card h3{font-size:13px;line-height:1.25;min-width:0}
+ .badge{font-size:9px;padding:1px 5px}
+ .card p{flex:none;font-size:11px;line-height:1.35;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow:hidden}
+ .meta{gap:4px}
+ .chip{font-size:10px;padding:2px 5px;gap:3px}
+ .actions{gap:4px;margin-top:auto}
+ .btn{flex:1 1 0;min-width:44px;min-height:44px;padding:0 4px;font-size:12px;white-space:nowrap}
+ .btn .ico{display:none}
+}
 </style>
 </head>
 <body>
